@@ -1,4 +1,3 @@
-FROM python:3
-ADD main.py /
-RUN pip3 install -r requirements.txt
-CMD [ "python3", "./main.py" ]
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+
+COPY ./app /app
