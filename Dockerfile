@@ -1,4 +1,4 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.7
+FROM python:3.7
 COPY ./app /app
 RUN pip install fastapi uvicorn
 EXPOSE 80
