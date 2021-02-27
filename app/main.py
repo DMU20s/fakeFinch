@@ -19,7 +19,9 @@ def read_item(item_id: int, q: Optional[str] = None):
 
 @app.get("/dummytal/get")
 def give_dummy_data():
-	print(time.time())
+	t1 = time.time()
 	seed(1)
-	print(random())
-	return {str(time.time()): str(random())}
+	random1 = random()
+	random2 = random()
+	t2 = time.time()
+	return {str(t1): str(random1), str(t2): str(random2)}
