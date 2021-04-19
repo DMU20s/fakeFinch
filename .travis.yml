@@ -1,9 +1,9 @@
 language: python
 arch:
-  - arm64
   - amd64
   - ppc64le
   - s390x
+  - arm64
 virt:
   - lxd
 os:
@@ -16,7 +16,6 @@ python:
   - 3.8
   - 3.7
   - 3.6
-  - 3.5
   - nightly
 cache: pip
 install:
