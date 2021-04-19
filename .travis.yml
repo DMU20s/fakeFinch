@@ -1,22 +1,12 @@
 language: python
-jobs:
-  include:
-    - name: 3.9 on xenial
-    python: 3.9
-    - name: pypy3 on xenial
-    python: pypy3
-    - name: 3.9 on arm64
-      arch: arm64
-      os: linux
-      dist: focal
-      python: 3.9
-    - name: pypy3 on arm64
-      arch: arm64
-      os: linux
-      dist: focal
-      python: pypy3
-
-
+arch:
+  - "arm64"
+  - "amd64"
+os: linux
+dist: focal
+python:
+  - "3.9"
+  - "pypy3"
 cache: pip
 virtualenv:
   system_site_packages: true
