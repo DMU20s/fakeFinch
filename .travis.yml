@@ -1,7 +1,24 @@
 language: python
-python:
-  - "3.9"
+jobs:
+  include:
+    - name: 3.9 and pypy on xenial
+    python:
+      - 3.9
+      - pypy3
+    before_install:
+      - python -m pip install --upgrade pip
+    - name: 3.9 and pypy on arm64
+      arch: arm64
+      os: linux
+      dist: focal
+      python:
+        - 3.9
+        - pypy3
+      before_install:
+        - python -m pip install --upgrade pip
 cache: pip
+virtualenv:
+  system_site_packages: true
 install:
   - pip install -r requirements.txt
 script: pytest tests/doesthistest.py
