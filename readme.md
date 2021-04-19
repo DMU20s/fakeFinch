@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.com/DMU20s/fakeFinch.svg?branch=master)](https://travis-ci.com/DMU20s/fakeFinch)
