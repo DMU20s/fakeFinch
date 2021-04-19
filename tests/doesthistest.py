@@ -3,7 +3,7 @@ import unittest
 
 class DoesThisTest(unittest.TestCase):
 	def test_something(self):
-		assert sum([1, 2, 3]) == 6, "Should be 6"
+		assert sum([1, 2, 3]) == 6
 
 	def test_something_else(self):
 		self.assertEqual(True, True)
