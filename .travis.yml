@@ -6,10 +6,18 @@ arch:
   - s390x
 virt:
   - lxd
-os: linux
+os:
+  - linux
+  - windows
+  - osx
 dist: focal
 python:
   - 3.9
+  - 3.8
+  - 3.7
+  - 3.6
+  - 3.5
+  - nightly
 cache: pip
 install:
   - pip install -r requirements.txt
