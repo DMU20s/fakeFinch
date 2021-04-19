@@ -2,7 +2,6 @@ language: python
 arch:
   - arm64
   - amd64
-  - arm64-graviton2
   - ppc64le
   - s390x
 virt:
