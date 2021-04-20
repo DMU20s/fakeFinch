@@ -8,8 +8,6 @@ virt:
   - lxd
 os:
   - linux
-  - windows
-  - osx
 dist: focal
 python:
   - 3.9
