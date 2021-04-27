@@ -1,8 +1,6 @@
 language: python
 arch:
   - amd64
-  - ppc64le
-  - s390x
   - arm64
 virt:
   - lxd
@@ -11,9 +9,6 @@ os:
 dist: focal
 python:
   - 3.9
-  - 3.8
-  - 3.7
-  - 3.6
   - nightly
 cache: pip
 install:
@@ -26,4 +21,4 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 
 env:
-- CODECOV_TOKEN='9bfaed89-7a58-4df7-b175-f5a0e63909f4'
+  - CODECOV_TOKEN='9bfaed89-7a58-4df7-b175-f5a0e63909f4'
