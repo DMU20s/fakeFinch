@@ -19,3 +19,8 @@ cache: pip
 install:
   - pip install -r requirements.txt
 script: pytest tests/doesthistest.py
+
+language:
+  python
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
